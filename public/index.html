@@ -15,8 +15,14 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link href="css/styles.css" rel="stylesheet" />
-    </head>
+        <link href="css/mystyle.css" rel="stylesheet" />
+    </head>    
+
     <body id="page-top">
+           <!-- fab-->  
+           <div class="fixed-bottom text-right">
+            <a class="social-icon icon-fab " href="https://api.whatsapp.com/send?phone=5511932108915"><i class="fab fa-whatsapp"></i></a>
+            </div>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #3872bd;" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
@@ -31,10 +37,12 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Educação</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interesses</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Certificados</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Certificados</a></li><br>
+                    <a class="social-icon icon-fab" href="https://api.whatsapp.com/send?phone=5511932108915"><i class="fab fa-whatsapp"></i></a>
                 </ul>
             </div>
         </nav>
+         
         <!-- Page Content-->
         <div class="container-fluid p-0">
             <!-- About-->
@@ -45,7 +53,7 @@
                         <span style="color: #3872bd;">Luiz da Silva</span>
                     </h1>
                     <div class="subheading mb-5">
-                        Rua Georg Ebers · Americanópolis, São Paulo - SP, CEP 04336-120· (11) 93210-8915 ·
+                        <a href="https://www.google.com/maps/search/?api=1&query=Rua Georg Ebers · Americanópolis, São Paulo - SP, CEP 04336-120"> Rua Georg Ebers · Americanópolis · São Paulo - SP · CEP 04336-120 </a>· <a href="https://api.whatsapp.com/send?phone=5511932108915">+55 (11) 93210-8915 ·</a> 
                         <a href="mailto:andremultifocal@hotmail.com">andremultifocal@hotmail.com</a>
                     </div>
                     <p class="lead mb-5">Sou formado em Análise e Desenvolvimento de Sistemas, com experiência de 3 meses em estágio, onde trabalhei na refatoração de código legado em C#, .NET 5 e SQL Server, além de realizar testes unitários e implementar melhorias no código. <br><br>
@@ -62,7 +70,7 @@
             </section>
             <hr class="m-0" />
             <!-- Experience-->
-            <section class="resume-section" id="experience">
+            <section class="resume-section mb-5" id="experience">
                 <div class="resume-section-content">
                     <h2 class="mb-5" data-aos="fade-right">Experiência Profissional</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5" data-aos="fade-left">
@@ -160,7 +168,7 @@
             </section>
             <hr class="m-0" />
             <!-- Interests-->
-            <section class="resume-section" id="interests" data-aos="fade-down">
+            <section class="resume-section" id="interests" data-aos="fade-left">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Interesses</h2>
                     <p>Estou ansioso para trabalhar com C#, .NET e SQL Server em breve, pois quero aprofundar meu conhecimento nessas tecnologias. Além disso, estou interessado em aprimorar minhas habilidades em CSS e HTML para contribuir efetivamente em projetos tanto no backend quanto no frontend. Estou aberto a aprender novas tecnologias sempre que surgir a oportunidade, pois acredito que a versatilidade é fundamental no desenvolvimento de software.</p>
@@ -169,7 +177,7 @@
             </section>
             <hr class="m-0" />
             <!-- Awards-->
-            <section class="resume-section" id="awards" data-aos="fade-up">
+            <section class="resume-section" id="awards" data-aos="fade-right">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Certificados</h2>
                     <ul class="fa-ul mb-0">
@@ -243,7 +251,9 @@
         <script src="js/scripts.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
-          AOS.init();
+          AOS.init({
+            disable : 'mobile'
+          });
         </script>
     </body>
 </html>
